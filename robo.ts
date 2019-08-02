@@ -1,6 +1,6 @@
 
 
-//% color="#FFA500" weight=20 icon="K"
+//% color="#FFA500" weight=130 icon="K"
 namespace KItspire {
 
     const PCA9685_ADD = 0x41
@@ -204,9 +204,9 @@ namespace KItspire {
         setPwm(15, 0, speed2);
         setPwm(14, 0, 0);
         //pins.digitalWritePin(DigitalPin.P16, 1);
-       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //速度控制
+       // pins.analogWritePin(AnalogPin.P1, 1023-speed); 
 
-       // pins.analogWritePin(AnalogPin.P0, speed);//速度控制
+       // pins.analogWritePin(AnalogPin.P0, speed);
        // pins.digitalWritePin(DigitalPin.P8, 0);
     }
 
@@ -380,7 +380,7 @@ namespace KItspire {
     //% blockId=HelloBot_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Program(): neopixel.Strip {
          
@@ -406,7 +406,7 @@ namespace KItspire {
     //% blockId=HelloBot_RGB_RArm_Program block="RGB_RArm_Program"
 		//% weight=97
 		//% blockGap=10
-		//% color="#006400"
+		//% color="#FFA500"
 		//% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_RArm_Program(): neopixel.Strip {
          
@@ -419,7 +419,7 @@ namespace KItspire {
     //% blockId=HelloBot_Touch_Sensor block="Touch_Sensor|%direct |direct |%value| value"
     //% weight=96
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Touch_Sensor(direct: enPos, value: enTouchState): boolean {
 
@@ -455,7 +455,7 @@ namespace KItspire {
     //% blockId=HelloBot_Music_Car block="Music_Car|%index"
     //% weight=95
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music_Car(index: enMusic): void {
         switch (index) {
@@ -485,7 +485,7 @@ namespace KItspire {
     //% blockId=HelloBot_Servo_Car block="Servo_Car|num %num|value %value"
     //% weight=94
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% num.min=1 num.max=4 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function Servo_Car(num: enServo, value: number): void {
@@ -500,7 +500,7 @@ namespace KItspire {
     //% blockId=HelloBot_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrl(index: CarState): void {
         switch (index) {
@@ -518,7 +518,7 @@ namespace KItspire {
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed(index: CarState, speed: number): void {
         switch (index) {
@@ -536,7 +536,7 @@ namespace KItspire {
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed2(index: CarState, speed1: number, speed2: number): void {
         switch (index) {
@@ -553,7 +553,7 @@ namespace KItspire {
     //% blockId=HelloBot_RGB_Line_Program block="RGB_Line_Program"
     //% weight=90
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Line_Program(): neopixel.Strip {
          
@@ -566,7 +566,7 @@ namespace KItspire {
     //% blockId=HelloBot_Line_Sensor block="Line_Sensor|direct %direct|value %value"
     //% weight=89
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Line_Sensor(direct: enPos, value: enLineState): boolean {
 
@@ -599,7 +599,7 @@ namespace KItspire {
     }
         
 		//% blockId=HelloBot_ultrasonic_car block="ultrasonic return distance(cm)"
-    //% color="#006400"
+    //% color="#FFA500"
     //% weight=88
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -626,7 +626,7 @@ namespace KItspire {
     //% blockId=HelloBot_Avoid_Sensor block="Avoid_Sensor|direct %direct|value %value"
     //% weight=87
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Avoid_Sensor(direct: enPos, value: enAvoidState): boolean {
 
