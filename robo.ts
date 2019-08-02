@@ -393,7 +393,7 @@ namespace KItspire {
     //% blockId=HelloBot_RGB_LArm_Program block="RGB_LArm_Program"
     //% weight=98
     //% blockGap=10
-    //% color="#006400"
+    //% color="#FFA500"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_LArm_Program(): neopixel.Strip {
          
