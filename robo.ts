@@ -5,8 +5,8 @@ load dependency
 "HelloBot": "file:../pxt-hellobot"
 */
 
-//% color="#006400" weight=20 icon="\uf1b9"
-namespace HelloBot {
+//% color="#006400" weight=20 icon= K
+namespace HKItspire {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
